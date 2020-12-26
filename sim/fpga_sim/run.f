@@ -8,6 +8,7 @@ ${XILINX_VIVADO}/data/verilog/src/glbl.v
 +libext+.v+.vlib
 
 -v ../../design/verilog/cdc/axi_cdc_buffer_sim_netlist.v
+-v ../../design/verilog/axi4_mem/axi4_mem_sim_netlist.v
 
 // ===================== SIM DEFINE ==================
 +incdir+../../design/verilog
