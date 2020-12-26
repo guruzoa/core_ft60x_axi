@@ -1,0 +1,19 @@
+*design* DebussyLib (btIdent Verdi_O-2018.09-SP2-11)
+Command arguments:
+    +define+verilog
+    -f run.f
+        +incdir+../../design/verilog
+        ./sim_define.v
+        ../../design/verilog/mem_axi.v
+        ../../src_v/ft60x_axi.v
+        ../../src_v/ft60x_axi_retime.v
+        ../../src_v/ft60x_fifo.v
+        ../../model/afifo.v
+        ../../model/ft601_model.v
+        ../../model/tb_ft601.v
+
+Highest level modules:
+afifo
+tb_ft601
+
+Total	0 error(s),   0 warning(s)

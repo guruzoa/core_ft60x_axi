@@ -1,0 +1,73 @@
+xrun(64): 19.03-s009: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	19.03-s009: Started on Dec 26, 2020 at 04:19:56 PST
+xrun
+	-64bit
+	-access rwc
+	-f run.f
+		+incdir+../../design/verilog
+		./sim_define.v
+		../../design/verilog/mem_axi.v
+		../../design/verilog/ft60x_axi.v
+		../../design/verilog/ft60x_axi_retime.v
+		../../design/verilog/ft60x_fifo.v
+		../../model/tb_ft601.v
+file: ../../model/tb_ft601.v
+	module worklib.tb_ft601:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+		Caching library 'worklib' ....... Done
+	Top level design units:
+		tb_ft601
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.mem_axi_dpram_sync_core:v <0x43b4c6f3>
+			streams:   4, words:  2003
+		worklib.ft60x_ram_dp:v <0x4a0b1f8a>
+			streams:   6, words:  2412
+		worklib.ft60x_fifo:v <0x39307ca3>
+			streams:  56, words: 18567
+		worklib.axi4retime_fifo2x39:v <0x48fe47f9>
+			streams:   7, words:  2964
+		worklib.axi4retime_fifo2x6:v <0x33015718>
+			streams:   7, words:  2770
+		worklib.axi4retime_fifo2x37:v <0x4d8cacf3>
+			streams:   7, words:  2964
+		worklib.axi4retime_fifo2x46:v <0x2e244695>
+			streams:   7, words:  2987
+		worklib.ft60x_axi_retime:v <0x663bf192>
+			streams:  10, words:  3616
+		worklib.ft60x_axi:v <0x2c846c7f>
+			streams:  25, words: 15179
+		worklib.tb_ft601:v <0x54e4fe86>
+			streams:   7, words:  3873
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                18      13
+		Registers:             162     143
+		Scalar wires:           72       -
+		Expanded wires:         64       8
+		Vectored wires:         92       -
+		Always blocks:          57      48
+		Initial blocks:          7       4
+		Cont. assignments:      42     106
+		Pseudo assignments:     44      44
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.tb_ft601:v
+Loading snapshot worklib.tb_ft601:v .................... Done
+*Verdi* Loading libsscore_xcelium171.so
+xcelium> source /tools/cadence/XCELIUM1903/tools/xcelium/files/xmsimrc
+xcelium> run
+tb_ft601.u_mem_axi INFO 004K (004096) byte memory
+FSDB Dumper for Xcelium, Release Verdi_O-2018.09-SP2-11, Linux x86_64/64bit, 02/05/2020
+(C) 1996 - 2020 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file './test.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+Simulation complete via $finish(1) at time 100038 NS + 0
+/projects/smu_project/ftdi_ft601/core_ft60x_axi/model/tb_ft601.v:367     $finish;
+xcelium> exit
+TOOL:	xrun(64)	19.03-s009: Exiting on Dec 26, 2020 at 04:19:57 PST  (total: 00:00:01)

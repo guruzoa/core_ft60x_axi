@@ -1,0 +1,70 @@
+Magic 271485
+Revision Verdi_O-2018.09-SP2-11
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 27 1536 277 214 164
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/projects/smu_project/ftdi_ft601/core_ft60x_axi/sim/fpga_sim/test.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 19993155.281470 20171559.679095
+cursor 41088000.000000
+marker 20028000.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 10
+; marker line index
+markerPos 16
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/projects/smu_project/ftdi_ft601/core_ft60x_axi/sim/fpga_sim/test.fsdb"
+addSignal -h 15 /tb_ft601/ft601_clk
+addSignal -h 15 -holdScope ARESETn
+addSignal -h 15 /tb_ft601/dut/clk0
+addSignal -h 15 -holdScope locked
+addSignal -h 15 -holdScope rst_n
+addSignal -h 15 /tb_ft601/dut/u_top/ftdi_rdn_o
+addSignal -h 15 -holdScope ftdi_oen_o
+addSignal -h 15 -holdScope ftdi_wrn_o
+addSignal -h 15 -holdScope ftdi_data_out_o[31:0]
+addSignal -h 15 -holdScope ftdi_be_out_o[3:0]
+addSignal -h 15 -holdScope ftdi_txe_i
+addSignal -h 15 -holdScope ftdi_rxf_i
+addSignal -h 15 -holdScope ftdi_data_in_i[31:0]
+addGroup "G2"
+addSignal -h 15 /tb_ft601/dut/u_top/ftdi_data_out_o[31:0]
+addSignal -h 15 -holdScope ftdi_be_out_o[3:0]
+addGroup "G3"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+

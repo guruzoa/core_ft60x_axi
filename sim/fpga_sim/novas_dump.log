@@ -1,0 +1,192 @@
+xmsim(64) 19.03-s009
+Linux 3.10.0-1127.19.1.el7.x86_64 #1 SMP Tue Aug 25 17:23:54 UTC 2020 x86_64
+CPU cores: 8
+Limit information:
+======================================
+cputime			unlimited
+filesize		unlimited
+datasize		unlimited
+stacksize		8192 kbytes
+coredumpsize	0 kbytes
+memoryuse		unlimited
+vmemoryuse		unlimited
+descriptors		4096
+memorylocked	64 kbytes
+maxproc			4096
+======================================
+(Special)Runtime environment variables:
+
+Runtime environment variables:
+MANPATH=/opt/rh/devtoolset-7/root/usr/share/man:
+XDG_SESSION_ID=1
+HOSTNAME=vmpc
+SELINUX_ROLE_REQUESTED=
+TERM=screen
+SHELL=/bin/bash
+HISTSIZE=1000
+SSH_CLIENT=192.168.220.1 14678 22
+PERL5LIB=/opt/rh/devtoolset-7/root//usr/lib64/perl5/vendor_perl:/opt/rh/devtoolset-7/root/usr/lib/perl5:/opt/rh/devtoolset-7/root//usr/share/perl5/vendor_perl
+SELINUX_USE_CURRENT_RANGE=
+BYOBU_CONFIG_DIR=/home/user/.byobu
+QTDIR=/usr/lib64/qt-3.3
+QTINC=/usr/lib64/qt-3.3/include
+BYOBU_TTY=/dev/pts/0
+SSH_TTY=/dev/pts/0
+QT_GRAPHICSSYSTEM_CHECKED=1
+BYOBU_READLINK=readlink
+USER=user
+PCP_DIR=/opt/rh/devtoolset-7/root
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:
+LD_LIBRARY_PATH=/tools/synopsys/verdi/O-2018.09-SP2-11/share/PLI/IUS/LINUXAMD64:/opt/rh/devtoolset-7/root/usr/lib64:/opt/rh/devtoolset-7/root/usr/lib:/opt/rh/devtoolset-7/root/usr/lib64/dyninst:/opt/rh/devtoolset-7/root/usr/lib/dyninst:/opt/rh/devtoolset-7/root/usr/lib64:/opt/rh/devtoolset-7/root/usr/lib:/usr/local/systemc-2.3.1/lib-linux64:/usr/lib
+SYSTEMC_LIBDIR=/usr/local/systemc-2.3.1/lib-linux64
+SYSTEMC_INCLUDE=/usr/local/systemc-2.3.1/include
+BYOBU_RUN_DIR=/dev/shm/byobu-user-EeFdzKLz
+BYOBU_DISTRO=S
+DVE_HOME=/tools/synopsys/vcs-mx/O-2018.09-SP2-3/gui/dve
+SNPSLMD_LICENSE_FILE=/tools/synopsys/vmPC_synopsys_license.dat
+BYOBU_DATE=%Y-%m-%d 
+TMUX=/tmp/tmux-1000/default,12985,1
+XCELIUM_HOME=/tools/cadence/XCELIUM1903
+BYOBU_SED=sed
+BYOBU_BACKEND=tmux
+PATH=/tools/cadence/XCELIUM1903/tools/bin/64bit:/tools/cadence/XCELIUM1903/tools/bin/64bit:/tools/cadence/XCELIUM1903/tools/bin/64bit:/tools/cadence/XCELIUM1903/tools/bin:/tools/add_tools/icc2/Q-2019.12-SP2a/bin:/tools/synopsys/icc/O-2018.06-SP5/bin:/tools/synopsys/syn/O-2018.06-SP5-5/bin:/tools/synopsys/pts/O-2018.06-SP5-2/bin:/tools/synopsys/verdi/O-2018.09-SP2-11/bin:/tools/synopsys/vcs-mx/O-2018.09-SP2-3/bin:/opt/rh/devtoolset-7/root/usr/bin:/usr/lib64/qt-3.3/bin:/usr/lib64/ccache:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/user/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/user/.local/bin:/home/user/bin:/home/user/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/user/gcc-arm-none-eabi-9-2020-q2-update/bin
+MAIL=/var/spool/mail/user
+PT_HOME=/tools/synopsys/pts/O-2018.06-SP5-2
+_=/tools/cadence/XCELIUM1903/tools/bin/xrun
+VERDI_HOME=/tools/synopsys/verdi/O-2018.09-SP2-11
+BYOBU_DARK=black
+PWD=/projects/smu_project/ftdi_ft601/core_ft60x_axi/sim/fpga_sim
+VCS_HOME=/tools/synopsys/vcs-mx/O-2018.09-SP2-3
+BYOBU_ULIMIT=ulimit
+MONOCHROME=0
+LANG=en_US.UTF-8
+VCS_ARCH_OVERRIDE=linux
+TMUX_PANE=%2
+ICC_HOME=/tools/synopsys/icc/O-2018.06-SP5
+SELINUX_LEVEL_REQUESTED=
+LM_LICENSE_FILE=/tools/cadence/vmPC_key.cadence
+BYOBU_WINDOW_NAME=-
+BYOBU_PYTHON=python2
+BYOBU_CHARMAP=UTF-8
+XILINX_VIVADO=/projects/smu_project/ftdi_ft601/core_ft60x_axi/library/xilinx_vivado_2019.2
+HISTCONTROL=ignoredups
+SHLVL=4
+HOME=/home/user
+ICC2_HOME=/tools/add_tools/icc2/Q-2019.12-SP2a
+BYOBU_LIGHT=white
+PYTHONPATH=/opt/rh/devtoolset-7/root/usr/lib64/python2.7/site-packages:/opt/rh/devtoolset-7/root/usr/lib/python2.7/site-packages
+LOGNAME=user
+DC_HOME=/tools/synopsys/syn/O-2018.06-SP5-5
+QTLIB=/usr/lib64/qt-3.3/lib
+XDG_DATA_DIRS=/home/user/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+SSH_CONNECTION=192.168.220.1 14678 192.168.220.128 22
+BYOBU_PAGER=less
+CDS_LIC_FILE=/tools/cadence/vmPC_key.cadence
+BYOBU_ACCENT=magenta
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+BYOBU_PREFIX=/usr
+INFOPATH=/opt/rh/devtoolset-7/root/usr/share/info
+XDG_RUNTIME_DIR=/run/user/1000
+DISPLAY=localhost:10.0
+BYOBU_HIGHLIGHT=red
+PLIOBJS=libvpi.so
+BYOBU_TIME=%H:%M:%S
+_XRUNROOT_=/tools/cadence/XCELIUM1903/tools
+_IRUNROOT_=/tools/cadence/XCELIUM1903/tools
+CDS_ARCH=lnx86
+ARG_V_Y_IS_USED=1
+XMRUNMODE=xrun:./xcelium.d/run.lnx8664.19.03.d
+XRUNBATCH=FALSE
+AMS_LOG_FILE_NAME=xrun.log
+IMPERAS_PORT_FILE=.vsp_ovp_gdb_port
+TCL_LIBRARY=/tools/cadence/XCELIUM1903/tools/inca/files/tcl/library
+Runtime command line arguments:
+argv[0]=xrun
+argv[1]=-64bit
+argv[2]=-access
+argv[3]=rwc
+argv[4]=-f
+argv[5]=run.f
+argv[6]=+incdir+/projects/smu_project/ftdi_ft601/core_ft60x_axi/library/xilinx_vivado_2019.2/data/verilog/src
+argv[7]=-y
+argv[8]=/projects/smu_project/ftdi_ft601/core_ft60x_axi/library/xilinx_vivado_2019.2/data/verilog/src/unisims
+argv[9]=-y
+argv[10]=/projects/smu_project/ftdi_ft601/core_ft60x_axi/library/xilinx_vivado_2019.2/data/verilog/src/unimacro
+argv[11]=-y
+argv[12]=/projects/smu_project/ftdi_ft601/core_ft60x_axi/library/xilinx_vivado_2019.2/data/verilog/src/retarget
+argv[13]=/projects/smu_project/ftdi_ft601/core_ft60x_axi/library/xilinx_vivado_2019.2/data/verilog/src/glbl.v
+argv[14]=+libext+.v+.vlib
+argv[15]=+incdir+../../design/verilog
+argv[16]=./sim_define.v
+argv[17]=../../design/verilog/mem_axi.v
+argv[18]=../../design/verilog/cdc/axi4_cdc.v
+argv[19]=-v
+argv[20]=../../design/verilog/cdc/axi_cdc_buffer_sim_netlist.v
+argv[21]=../../design/verilog/artix7_pll.v
+argv[22]=../../design/verilog/axi4_arb.v
+argv[23]=../../design/verilog/fpga_soc.v
+argv[24]=../../design/verilog/ft60x_axi.v
+argv[25]=../../design/verilog/ft60x_axi_retime.v
+argv[26]=../../design/verilog/ft60x_fifo.v
+argv[27]=../../design/verilog/top.v
+argv[28]=../../model/ft601_model.v
+argv[29]=../../bench/tb_top.v
+133 profile - 100
+          CPU/Mem usage: 0.040 sys,  0.430 user,  339.36M sys,  0.00M vm
+134 VC callback profile - scalar:0 vector:0
+135 Sat Dec 26 04:17:19 2020
+136 pliAppInit
+137 FSDB_GATE is disabled.
+138 Enable Parallel Dumping.
+139 pliAppMiscSet: New Sim Round
+140 pliEntryInit
+141 LIBSSCORE=found /tools/synopsys/verdi/O-2018.09-SP2-11/share/PLI/IUS/LINUXAMD64/libsscore_xcelium171.so through $LD_LIBRARY_PATH setting.
+142 argv[0]: ./test.fsdb
+143 argv[0]: 0
+144 FSDB Dumper for Xcelium, Release Verdi_O-2018.09-SP2-11, Linux x86_64/64bit, 02/05/2020
+145 (C) 1996 - 2020 by Synopsys, Inc.
+146 sps_call_fsdbDumpfile at 0 : /projects/smu_project/ftdi_ft601/core_ft60x_axi/bench/tb_top.v(387)
+147 argv[0]: ./test.fsdb
+148 *Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+149 *Verdi* : Create FSDB file './test.fsdb'
+150 sps_call_fsdbDumpvars at 0 : /projects/smu_project/ftdi_ft601/core_ft60x_axi/bench/tb_top.v(388)
+151 argv[0]: 0
+152 *Verdi* : Begin traversing the scopes, layer (0).
+153 Cell instance `tb_ft601.dut.IBUF_IN'.
+154 *Verdi* : End of traversing.
+155 fsdbDumpvars traverse var: profile - 
+          CPU/Mem usage: 0.060 sys,  0.560 user,  455.36M sys,  0.00M vm
+                   incr: 0.010 sys,  0.110 user,  15.45M sys,  0.00M vm
+                   accu: 0.010 sys,  0.110 user,  15.45M sys,  0.00M vm
+              accu incr: 0.010 sys,  0.110 user,  15.45M sys,  0.00M vm
+
+          Count usage: 22380 var,  10863 idcode,  10863 callback
+                 incr: 22380 var,  10863 idcode,  10863 callback
+                 accu: 22380 var,  10863 idcode,  10863 callback
+            accu incr: 22380 var,  10863 idcode,  10863 callback
+156 VC callback profile - scalar:0 vector:0
+157 Sat Dec 26 04:17:19 2020
+158 fsdbDumpvars: profile - 
+          CPU/Mem usage: 0.060 sys,  0.570 user,  456.41M sys,  0.00M vm
+                   incr: 0.000 sys,  0.010 user,  1.05M sys,  0.00M vm
+                   accu: 0.010 sys,  0.120 user,  16.50M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.010 user,  1.05M sys,  0.00M vm
+
+          Count usage: 22380 var,  10863 idcode,  10863 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 22380 var,  10863 idcode,  10863 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+159 VC callback profile - scalar:9578 vector:1285
+160 Sat Dec 26 04:17:19 2020
+161 End of simulation at 100033000
+162 VC callback profile - scalar:5948380 vector:2631953
+163 Sat Dec 26 04:17:20 2020
+164 Begin FSDB profile info:
+165 FSDB Writer : bc1(5948350) bcn(2631983) mtf/stf(0/0)
+FSDB Writer elapsed time : flush(0.147400) io wait(0.000000) theadpool wait(0.000000) target functin(0.000000)
+FSDB Writer cpu time : MT Compression : 0
+166 End FSDB profile info
+167 Parallel profile    -  Flush:3 Expand:0 ProduceWait:0 ConsumerWait:57 BlockUsed:57
+168                        ProduceTime:1.546085898 ConsumerTime:0.430965058 Buffer:64MB
+169 SimExit
+170 Sim process exit

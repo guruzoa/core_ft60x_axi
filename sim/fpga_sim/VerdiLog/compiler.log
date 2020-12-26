@@ -1,0 +1,31 @@
+*design* DebussyLib (btIdent Verdi_O-2018.09-SP2-11)
+Command arguments:
+    +define+verilog
+    -f run.f
+        +incdir+/projects/smu_project/ftdi_ft601/core_ft60x_axi/library/xilinx_vivado_2019.2/data/verilog/src
+        -y /projects/smu_project/ftdi_ft601/core_ft60x_axi/library/xilinx_vivado_2019.2/data/verilog/src/unisims
+        -y /projects/smu_project/ftdi_ft601/core_ft60x_axi/library/xilinx_vivado_2019.2/data/verilog/src/unimacro
+        -y /projects/smu_project/ftdi_ft601/core_ft60x_axi/library/xilinx_vivado_2019.2/data/verilog/src/retarget
+        /projects/smu_project/ftdi_ft601/core_ft60x_axi/library/xilinx_vivado_2019.2/data/verilog/src/glbl.v
+        +libext+.v+.vlib
+        +incdir+../../design/verilog
+        ./sim_define.v
+        ../../design/verilog/mem_axi.v
+        ../../design/verilog/cdc/axi4_cdc.v
+        -v ../../design/verilog/cdc/axi_cdc_buffer_sim_netlist.v
+        ../../design/verilog/artix7_pll.v
+        ../../design/verilog/axi4_arb.v
+        ../../design/verilog/fpga_soc.v
+        ../../design/verilog/ft60x_axi.v
+        ../../design/verilog/ft60x_axi_retime.v
+        ../../design/verilog/ft60x_fifo.v
+        ../../design/verilog/top.v
+        ../../model/ft601_model.v
+        ../../bench/tb_top.v
+
+Highest level modules:
+glbl
+axi4_arb
+tb_ft601
+
+Total	0 error(s),   0 warning(s)

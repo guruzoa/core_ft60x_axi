@@ -1,0 +1,84 @@
+xrun(64): 19.03-s009: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	19.03-s009: Started on Dec 26, 2020 at 04:17:18 PST
+xrun
+	-64bit
+	-access rwc
+	-f run.f
+		+incdir+/projects/smu_project/ftdi_ft601/core_ft60x_axi/library/xilinx_vivado_2019.2/data/verilog/src
+		-y /projects/smu_project/ftdi_ft601/core_ft60x_axi/library/xilinx_vivado_2019.2/data/verilog/src/unisims
+		-y /projects/smu_project/ftdi_ft601/core_ft60x_axi/library/xilinx_vivado_2019.2/data/verilog/src/unimacro
+		-y /projects/smu_project/ftdi_ft601/core_ft60x_axi/library/xilinx_vivado_2019.2/data/verilog/src/retarget
+		/projects/smu_project/ftdi_ft601/core_ft60x_axi/library/xilinx_vivado_2019.2/data/verilog/src/glbl.v
+		+libext+.v+.vlib
+		+incdir+../../design/verilog
+		./sim_define.v
+		../../design/verilog/mem_axi.v
+		../../design/verilog/cdc/axi4_cdc.v
+		-v ../../design/verilog/cdc/axi_cdc_buffer_sim_netlist.v
+		../../design/verilog/artix7_pll.v
+		../../design/verilog/axi4_arb.v
+		../../design/verilog/fpga_soc.v
+		../../design/verilog/ft60x_axi.v
+		../../design/verilog/ft60x_axi_retime.v
+		../../design/verilog/ft60x_fifo.v
+		../../design/verilog/top.v
+		../../model/ft601_model.v
+		../../bench/tb_top.v
+Recompiling... reason: file '/projects/smu_project/ftdi_ft601/core_ft60x_axi/design/verilog/fpga_soc.v' is newer than expected.
+	expected: Sat Dec 26 04:15:54 2020
+	actual:   Sat Dec 26 04:17:17 2020
+file: ../../design/verilog/fpga_soc.v
+	module worklib.fpga_soc:v
+		errors: 0, warnings: 0
+file: /projects/smu_project/ftdi_ft601/core_ft60x_axi/library/xilinx_vivado_2019.2/data/verilog/src/unisims/RAM32M.v
+xmvlog: *W,LIBNOU: Library "/projects/smu_project/ftdi_ft601/core_ft60x_axi/library/xilinx_vivado_2019.2/data/verilog/src/unimacro" given but not used.
+xmvlog: *W,LIBNOU: Library "/projects/smu_project/ftdi_ft601/core_ft60x_axi/library/xilinx_vivado_2019.2/data/verilog/src/retarget" given but not used.
+xmvlog: *W,SPDUSD: Include directory /projects/smu_project/ftdi_ft601/core_ft60x_axi/library/xilinx_vivado_2019.2/data/verilog/src given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 3
+		Caching library 'unisims' ....... Done
+		Caching library 'axi_cdc_buffer_sim_netlist' ....... Done
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		glbl
+		axi4_arb
+		tb_ft601
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.fpga_soc:v <0x0c3cf8e2>
+			streams:   1, words:   971
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:               1377     137
+		UDPs:                   172       3
+		Primitives:               2       1
+		Resolved nets:            0       1
+		Timing outputs:          18       3
+		Registers:             5693     675
+		Scalar wires:          6055       -
+		Expanded wires:         320      35
+		Vectored wires:         475       -
+		Always blocks:         2221     183
+		Initial blocks:        3577     105
+		Cont. assignments:     2752     561
+		Pseudo assignments:     824     226
+		Simulation timescale:   1ps
+	Writing initial simulation snapshot: worklib.glbl:v
+Loading snapshot worklib.glbl:v .................... Done
+*Verdi* Loading libsscore_xcelium171.so
+xcelium> source /tools/cadence/XCELIUM1903/tools/xcelium/files/xmsimrc
+xcelium> run
+tb_ft601.dut.u_top.u_mem_axi INFO 004K (004096) byte memory
+FSDB Dumper for Xcelium, Release Verdi_O-2018.09-SP2-11, Linux x86_64/64bit, 02/05/2020
+(C) 1996 - 2020 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file './test.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+Simulation complete via $finish(1) at time 100033 NS + 0
+/projects/smu_project/ftdi_ft601/core_ft60x_axi/bench/tb_top.v:382     $finish;
+xcelium> exit
+TOOL:	xrun(64)	19.03-s009: Exiting on Dec 26, 2020 at 04:17:20 PST  (total: 00:00:02)

@@ -1,0 +1,398 @@
+debImport "-f" "run.f"
+debReload
+debReload
+nsMsgSelect -range {0 9-9}
+debReload
+debReload
+nsMsgSelect -range {0 0-0}
+debReload
+nsMsgSelect -range {0 0-0}
+debReload
+debReload
+srcHBSelect "tb_ft601" -win $_nTrace1
+srcSetScope -win $_nTrace1 "tb_ft601" -delim "."
+srcHBSelect "tb_ft601" -win $_nTrace1
+schCreateWindow -delim "." -win $_nSchema1 -scope "tb_ft601"
+verdiDockWidgetMaximize -dock windowDock_nSchema_2
+schFit -win $_nSchema2
+schFit -win $_nSchema2
+schFit -win $_nSchema2
+schFit -win $_nSchema2
+schFit -win $_nSchema2
+schFit -win $_nSchema2
+schFit -win $_nSchema2
+schSelect -win $_nSchema2 -inst "u_ft601_model"
+schDeselectAll -win $_nSchema2
+schSelect -win $_nSchema2 -inst "u_ft601_ctrl"
+schDeselectAll -win $_nSchema2
+schSelect -win $_nSchema2 -signal "fifo_rd_en"
+schZoom {10763} {4442} {32317} {13910} -win $_nSchema2
+schDeselectAll -win $_nSchema2
+schFit -win $_nSchema2
+verdiDockWidgetRestore -dock windowDock_nSchema_2
+debReload
+schFit -win $_nSchema2
+schFit -win $_nSchema2
+schFit -win $_nSchema2
+schFit -win $_nSchema2
+schFit -win $_nSchema2
+wvCreateWindow
+wvSetPosition -win $_nWave3 {("G1" 0)}
+wvOpenFile -win $_nWave3 \
+           {/projects/smu_project/ftdi_ft601/core_ft60x_axi/sim/rtl_sim/test.fsdb}
+wvSelectGroup -win $_nWave3 {G1}
+wvGetSignalOpen -win $_nWave3
+wvGetSignalSetScope -win $_nWave3 "/ft60x_axi"
+wvGetSignalSetScope -win $_nWave3 "/tb_ft601"
+wvSetPosition -win $_nWave3 {("G1" 3)}
+wvSetPosition -win $_nWave3 {("G1" 3)}
+wvAddSignal -win $_nWave3 -clear
+wvAddSignal -win $_nWave3 -group {"G1" \
+{/tb_ft601/fifo_rd_en} \
+{/tb_ft601/fifo_rd_start} \
+{/tb_ft601/ft601_clk} \
+}
+wvAddSignal -win $_nWave3 -group {"G2" \
+}
+wvSelectSignal -win $_nWave3 {( "G1" 1 2 3 )} 
+wvSetPosition -win $_nWave3 {("G1" 3)}
+wvSetPosition -win $_nWave3 {("G1" 3)}
+wvSetPosition -win $_nWave3 {("G1" 3)}
+wvAddSignal -win $_nWave3 -clear
+wvAddSignal -win $_nWave3 -group {"G1" \
+{/tb_ft601/fifo_rd_en} \
+{/tb_ft601/fifo_rd_start} \
+{/tb_ft601/ft601_clk} \
+}
+wvAddSignal -win $_nWave3 -group {"G2" \
+}
+wvSelectSignal -win $_nWave3 {( "G1" 1 2 3 )} 
+wvSetPosition -win $_nWave3 {("G1" 3)}
+wvGetSignalClose -win $_nWave3
+wvZoomAll -win $_nWave3
+wvZoomAll -win $_nWave3
+wvZoom -win $_nWave3 0.000000 23030875.644876
+wvZoom -win $_nWave3 264488.854579 1302098.976389
+wvZoom -win $_nWave3 404731.212032 687049.160369
+wvSelectGroup -win $_nWave3 {G2}
+wvSetPosition -win $_nWave3 {("G2" 0)}
+wvGetSignalOpen -win $_nWave3
+wvGetSignalSetScope -win $_nWave3 "/ft60x_axi"
+wvGetSignalSetScope -win $_nWave3 "/tb_ft601"
+wvGetSignalSetScope -win $_nWave3 "/tb_ft601"
+wvGetSignalSetScope -win $_nWave3 "/tb_ft601/u_ft601_model"
+wvGetSignalSetOptions -win $_nWave3 -input on
+wvGetSignalSetSignalFilter -win $_nWave3 "*"
+wvGetSignalSetOptions -win $_nWave3 -output on
+wvGetSignalSetSignalFilter -win $_nWave3 "*"
+wvGetSignalSetOptions -win $_nWave3 -inout on
+wvGetSignalSetSignalFilter -win $_nWave3 "*"
+wvSetPosition -win $_nWave3 {("G2" 9)}
+wvSetPosition -win $_nWave3 {("G2" 9)}
+wvAddSignal -win $_nWave3 -clear
+wvAddSignal -win $_nWave3 -group {"G1" \
+{/tb_ft601/fifo_rd_en} \
+{/tb_ft601/fifo_rd_start} \
+{/tb_ft601/ft601_clk} \
+}
+wvAddSignal -win $_nWave3 -group {"G2" \
+{/tb_ft601/u_ft601_model/BE\[3:0\]} \
+{/tb_ft601/u_ft601_model/DATA\[31:0\]} \
+{/tb_ft601/u_ft601_model/OE_N} \
+{/tb_ft601/u_ft601_model/RD_N} \
+{/tb_ft601/u_ft601_model/RXF_N} \
+{/tb_ft601/u_ft601_model/SIWU_N} \
+{/tb_ft601/u_ft601_model/TXE_N} \
+{/tb_ft601/u_ft601_model/WR_N} \
+{/tb_ft601/u_ft601_model/ft601_clk} \
+}
+wvAddSignal -win $_nWave3 -group {"G3" \
+}
+wvSelectSignal -win $_nWave3 {( "G2" 1 2 3 4 5 6 7 8 9 )} 
+wvSetPosition -win $_nWave3 {("G2" 9)}
+wvSetPosition -win $_nWave3 {("G2" 9)}
+wvSetPosition -win $_nWave3 {("G2" 9)}
+wvAddSignal -win $_nWave3 -clear
+wvAddSignal -win $_nWave3 -group {"G1" \
+{/tb_ft601/fifo_rd_en} \
+{/tb_ft601/fifo_rd_start} \
+{/tb_ft601/ft601_clk} \
+}
+wvAddSignal -win $_nWave3 -group {"G2" \
+{/tb_ft601/u_ft601_model/BE\[3:0\]} \
+{/tb_ft601/u_ft601_model/DATA\[31:0\]} \
+{/tb_ft601/u_ft601_model/OE_N} \
+{/tb_ft601/u_ft601_model/RD_N} \
+{/tb_ft601/u_ft601_model/RXF_N} \
+{/tb_ft601/u_ft601_model/SIWU_N} \
+{/tb_ft601/u_ft601_model/TXE_N} \
+{/tb_ft601/u_ft601_model/WR_N} \
+{/tb_ft601/u_ft601_model/ft601_clk} \
+}
+wvAddSignal -win $_nWave3 -group {"G3" \
+}
+wvSelectSignal -win $_nWave3 {( "G2" 1 2 3 4 5 6 7 8 9 )} 
+wvSetPosition -win $_nWave3 {("G2" 9)}
+wvGetSignalClose -win $_nWave3
+wvSetCursor -win $_nWave3 473814.314231 -snap {("G2" 2)}
+wvSetMarker -win $_nWave3 478000.000000
+wvZoomOut -win $_nWave3
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvZoom -win $_nWave3 410716.751573 566839.574593
+wvSetCursor -win $_nWave3 468228.427544 -snap {("G2" 2)}
+wvSetMarker -win $_nWave3 468000.000000
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoom -win $_nWave3 238321.765176 818679.397039
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 0
+wvSetCursor -win $_nWave3 480821.023013 -snap {("G2" 2)}
+wvSetMarker -win $_nWave3 478000.000000
+wvZoom -win $_nWave3 368543.353951 564388.420534
+wvSetCursor -win $_nWave3 469407.023401 -snap {("G2" 2)}
+wvSetMarker -win $_nWave3 468000.000000
+wvSelectSignal -win $_nWave3 {( "G2" 8 )} 
+wvPrevView -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoom -win $_nWave3 26659.537859 537292.224552
+wvZoomAll -win $_nWave3
+schZoom {21844} {7628} {41349} {14536} -win $_nSchema2
+schFit -win $_nSchema2
+schZoom {-2130} {-1149} {19163} {10960} -win $_nSchema2
+schZoom {6086} {2050} {12728} {6262} -win $_nSchema2
+schZoomOut -win $_nSchema2
+schSelect -win $_nSchema2 -signal "BE\[3:0\]"
+schDeselectAll -win $_nSchema2
+schSelect -win $_nSchema2 -signal "SIWU_N" "OE_N"
+schFit -win $_nSchema2
+schZoom {13230} {2345} {27858} {11529} -win $_nSchema2
+schZoom {16244} {3789} {26902} {9440} -win $_nSchema2
+wvScrollDown -win $_nWave3 0
+wvSelectGroup -win $_nWave3 {G3}
+wvSetPosition -win $_nWave3 {("G3" 0)}
+schDeselectAll -win $_nSchema2
+schSelect -win $_nSchema2 -signal "SIWU_N" "OE_N"
+schAddSelectedToWave -win $_nSchema2 -clipboard
+wvDrop -win $_nWave3
+wvSetCursor -win $_nWave3 26436219.125442 -snap {("G3" 2)}
+wvZoomAll -win $_nWave3
+wvZoomAll -win $_nWave3
+wvZoom -win $_nWave3 0.000000 21507432.508834
+wvZoomAll -win $_nWave3
+wvSetCursor -win $_nWave3 12546002.296820 -snap {("G2" 5)}
+wvSetMarker -win $_nWave3 10718000.000000
+wvZoomAll -win $_nWave3
+wvZoomAll -win $_nWave3
+wvZoomAll -win $_nWave3
+wvZoom -win $_nWave3 6810686.961131 21328203.904594
+wvZoom -win $_nWave3 9850131.762897 11696883.034857
+wvZoom -win $_nWave3 10409703.923924 10863234.713327
+wvZoom -win $_nWave3 10610026.710759 10778698.497278
+wvZoom -win $_nWave3 10707772.905058 10753218.925277
+wvSelectSignal -win $_nWave3 {( "G2" 2 )} 
+wvSetPosition -win $_nWave3 {("G2" 2)}
+wvExpandBus -win $_nWave3 {("G2" 2)}
+wvSetPosition -win $_nWave3 {("G3" 2)}
+wvScrollUp -win $_nWave3 26
+wvSelectSignal -win $_nWave3 {( "G2" 2 )} 
+wvSetPosition -win $_nWave3 {("G2" 2)}
+wvCollapseBus -win $_nWave3 {("G2" 2)}
+wvSetPosition -win $_nWave3 {("G2" 2)}
+wvSetPosition -win $_nWave3 {("G3" 2)}
+wvSetCursor -win $_nWave3 10728930.195382 -snap {("G2" 2)}
+wvSetMarker -win $_nWave3 10728000.000000
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+schDeselectAll -win $_nSchema2
+schZoomOut -win $_nSchema2
+schZoomOut -win $_nSchema2
+schZoomOut -win $_nSchema2
+schZoomOut -win $_nSchema2
+schZoom {21956} {10584} {42334} {15655} -win $_nSchema2
+schSelect -win $_nSchema2 -signal "fifo_rd_data\[31:0\]"
+schSelect -win $_nSchema2 -signal "fifo_rd_data\[31:0\]"
+schAddSelectedToWave -win $_nSchema2 -clipboard
+wvDrop -win $_nWave3
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvSetPosition -win $_nWave3 {("G4" 0)}
+wvMoveSelected -win $_nWave3
+wvSetPosition -win $_nWave3 {("G4" 1)}
+wvSetPosition -win $_nWave3 {("G4" 1)}
+wvSetCursor -win $_nWave3 10652771.979518 -snap {("G3" 2)}
+wvZoomAll -win $_nWave3
+wvZoomAll -win $_nWave3
+wvZoom -win $_nWave3 0.000000 18729389.143110
+wvZoomAll -win $_nWave3
+schDeselectAll -win $_nSchema2
+schSelect -win $_nSchema2 -signal "fifo_rd_data\[31:0\]"
+schZoomOut -win $_nSchema2
+schZoomOut -win $_nSchema2
+schZoom {27701} {14010} {38968} {18961} -win $_nSchema2
+schSelect -win $_nSchema2 -inst "u_fifo_65536x32"
+schZoomOut -win $_nSchema2
+schZoomOut -win $_nSchema2
+schSelect -win $_nSchema2 -inst "u_fifo_65536x32"
+schPushViewIn -win $_nSchema2
+schZoom {81141} {10812} {87187} {15120} -win $_nSchema2
+schSelect -win $_nSchema2 -signal "o_wfull" "o_rempty"
+schAddSelectedToWave -win $_nSchema2 -clipboard
+wvDrop -win $_nWave3
+wvSetPosition -win $_nWave3 {("G4" 2)}
+wvSetPosition -win $_nWave3 {("G4" 3)}
+wvSetPosition -win $_nWave3 {("G5" 0)}
+wvMoveSelected -win $_nWave3
+wvSetPosition -win $_nWave3 {("G5" 2)}
+wvSetPosition -win $_nWave3 {("G5" 2)}
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvSetCursor -win $_nWave3 0.000000
+wvZoomAll -win $_nWave3
+wvZoomAll -win $_nWave3
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvZoomAll -win $_nWave3
+wvZoomAll -win $_nWave3
+wvZoom -win $_nWave3 0.000000 14965588.454064
+wvZoom -win $_nWave3 0.000000 2577994.477511
+wvZoomAll -win $_nWave3
+wvSelectSignal -win $_nWave3 {( "G5" 1 )} 
+wvSelectSignal -win $_nWave3 {( "G5" 2 )} 
+schDeselectAll -win $_nSchema2
+schPopViewUp -win $_nSchema2
+schZoomOut -win $_nSchema2
+schZoomOut -win $_nSchema2
+schFit -win $_nSchema2
+schZoom {6484} {3239} {17050} {7872} -win $_nSchema2
+schZoomOut -win $_nSchema2
+schZoomOut -win $_nSchema2
+schZoom {6468} {3098} {13510} {5538} -win $_nSchema2
+schZoomOut -win $_nSchema2
+schZoomOut -win $_nSchema2
+schFit -win $_nSchema2
+schZoom {5021} {1532} {16806} {9091} -win $_nSchema2
+schZoom {3177} {2948} {13011} {6790} -win $_nSchema2
+schSelect -win $_nSchema2 -signal "ft601_clk"
+schAddSelectedToWave -win $_nSchema2 -clipboard
+wvDrop -win $_nWave3
+schSelect -win $_nSchema2 -signal "RXF_N" "TXE_N"
+schAddSelectedToWave -win $_nSchema2 -clipboard
+wvDrop -win $_nWave3
+schSelect -win $_nSchema2 -signal "SIWU_N" "OE_N"
+schAddSelectedToWave -win $_nSchema2 -clipboard
+wvDrop -win $_nWave3
+wvSetCursor -win $_nWave3 11201787.765018 -snap {("G5" 6)}
+wvSetMarker -win $_nWave3 0.000000
+wvZoomAll -win $_nWave3
+schDeselectAll -win $_nSchema2
+schSelect -win $_nSchema2 -signal "RD_N"
+schAddSelectedToWave -win $_nSchema2 -clipboard
+wvDrop -win $_nWave3
+schSelect -win $_nSchema2 -signal "WR_N"
+schAddSelectedToWave -win $_nSchema2 -clipboard
+wvDrop -win $_nWave3
+wvSetCursor -win $_nWave3 10932944.858657 -snap {("G5" 9)}
+wvSetMarker -win $_nWave3 10718000.000000
+wvZoomAll -win $_nWave3
+wvZoomAll -win $_nWave3
+wvZoomAll -win $_nWave3
+wvZoomAll -win $_nWave3
+wvZoomAll -win $_nWave3
+wvTpfCloseForm -win $_nWave3
+wvGetSignalClose -win $_nWave3
+wvCloseWindow -win $_nWave3
+verdiWindowResize -win $_Verdi_1 "0" "23" "1536" "897"
+verdiDockWidgetSetCurTab -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+debReload
+debReload
+nsMsgSelect -range {0 0-0}
+debReload
+nsMsgSelect -range {0 0-0}
+nsMsgSelect -range {0 1-1}
+nsMsgSelect -range {0 0-0}
+debReload
+nsMsgSelect -range {0 0-0}
+nsMsgSelect -range {0 2-2}
+nsMsgSelect -range {0 0-0}
+debReload
+srcHBSelect "tb_ft601" -win $_nTrace1
+srcSetScope -win $_nTrace1 "tb_ft601" -delim "."
+srcHBSelect "tb_ft601" -win $_nTrace1
+debReload
+schCreateWindow -delim "." -win $_nSchema1 -scope "tb_ft601"
+schFit -win $_nSchema4
+schFit -win $_nSchema4
+schFit -win $_nSchema4
+verdiDockWidgetMaximize -dock windowDock_nSchema_4
+schFit -win $_nSchema4
+schFit -win $_nSchema4
+schSelect -win $_nSchema4 -inst "u_mem_axi"
+schDeselectAll -win $_nSchema4
+schFit -win $_nSchema4
+schZoom {36357} {20532} {47770} {22581} -win $_nSchema4
+schZoomOut -win $_nSchema4
+schZoomOut -win $_nSchema4
+schZoomOut -win $_nSchema4
+schZoomOut -win $_nSchema4
+schZoom {25986} {17189} {49399} {26007} -win $_nSchema4
+schZoomOut -win $_nSchema4
+schZoom {29467} {18387} {34342} {20743} -win $_nSchema4
+schSelect -win $_nSchema4 -instport "u_ft601_model" "SIWU_N"
+schPushViewIn -win $_nSchema4
+schFit -win $_nSchema4
+schFit -win $_nSchema4
+schPopViewUp -win $_nSchema4
+schFit -win $_nSchema4
+schZoom {17044} {14512} {38531} {24253} -win $_nSchema4
+schDeselectAll -win $_nSchema4
+schSelect -win $_nSchema4 -signal "RD_N" "WR_N" "OE_N"
+schDeselectAll -win $_nSchema4
+schFit -win $_nSchema4
+schZoom {7847} {13927} {22687} {23333} -win $_nSchema4
+schFit -win $_nSchema4
+verdiDockWidgetRestore -dock windowDock_nSchema_4
+debReload
+nsMsgSelect -range {0 1-1}
+debReload
+debReload
+debExit

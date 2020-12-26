@@ -1,0 +1,30 @@
+s1(26Dec2020:00:56:08):  xrun -f run.f 
+s2(26Dec2020:00:57:15):  xrun -f run.f 
+s3(26Dec2020:00:57:45):  xrun -f run.f 
+s4(26Dec2020:00:58:29):  xrun -64bit -access+rwc -f run.f 
+s5(26Dec2020:00:59:02):  xrun -64bit -access rwc -f run.f 
+s6(26Dec2020:01:34:55):  xrun -64bit -access rwc -f run.f 
+s7(26Dec2020:01:51:50):  xrun -64bit -access rwc -f run.f 
+s8(26Dec2020:01:53:52):  xrun -64bit -access rwc -f run.f 
+s9(26Dec2020:02:07:05):  xrun -64bit -access rwc -f run.f 
+s10(26Dec2020:02:08:33):  xrun -64bit -access rwc -f run.f 
+s11(26Dec2020:02:09:10):  xrun -64bit -access rwc -f run.f 
+s12(26Dec2020:02:15:25):  xrun -64bit -access rwc -f run.f 
+s13(26Dec2020:02:17:30):  xrun -64bit -access rwc -f run.f 
+s14(26Dec2020:02:22:07):  xrun -64bit -access rwc -f run.f 
+s15(26Dec2020:02:22:48):  xrun -64bit -access rwc -f run.f 
+s16(26Dec2020:02:28:12):  xrun -64bit -access rwc -f run.f 
+s17(26Dec2020:02:28:26):  xrun -64bit -access rwc -f run.f 
+s18(26Dec2020:02:28:37):  xrun -64bit -access rwc -f run.f 
+s19(26Dec2020:02:33:17):  xrun -64bit -access rwc -f run.f 
+s20(26Dec2020:02:37:29):  xrun -64bit -access rwc -f run.f 
+s21(26Dec2020:02:37:50):  xrun -64bit -access rwc -f run.f 
+s22(26Dec2020:04:00:10):  xrun -64bit -access rwc -f run.f 
+s23(26Dec2020:04:00:32):  xrun -64bit -access rwc -f run.f 
+s24(26Dec2020:04:01:28):  xrun -64bit -access rwc -f run.f 
+s25(26Dec2020:04:03:31):  xrun -64bit -access rwc -f run.f 
+s26(26Dec2020:04:05:29):  xrun -64bit -access rwc -f run.f 
+s27(26Dec2020:04:07:10):  xrun -64bit -access rwc -f run.f 
+s28(26Dec2020:04:15:12):  xrun -64bit -access rwc -f run.f 
+s29(26Dec2020:04:15:58):  xrun -64bit -access rwc -f run.f 
+s30(26Dec2020:04:17:18):  xrun -64bit -access rwc -f run.f 
